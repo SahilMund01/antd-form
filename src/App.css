@@ -1,0 +1,10 @@
+.App {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+:where(.css-dev-only-do-not-override-d2lrxs).ant-picker-outlined {
+  width: 100% !important;
+}
