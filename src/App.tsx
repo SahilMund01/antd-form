@@ -2,9 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useForm, Controller } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { Alert } from 'antd';
 import dayjs from 'dayjs';
-import "./App.css";
 
 import {
   Card,
@@ -15,7 +13,9 @@ import {
   Select,
   DatePicker,
   Form,
+  Alert
 } from 'antd';
+import "./App.css";
 
 const { Option } = Select;
 
@@ -70,11 +70,6 @@ function App() {
         email: false,
         sms: false,
         push: false,
-      },
-      prefix: {
-       mr: false,
-       mrs: false,
-       other: false
       },
       datePicker: null,
     },
