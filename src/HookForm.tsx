@@ -68,7 +68,7 @@ const schema = z.object({
 }).refine((data) => data.password === data.confirmPassword, {
   message: "Passwords don't match",
   path: ["confirmPassword"],
-});;
+});
 
 type FieldType = z.infer<typeof schema>;
 

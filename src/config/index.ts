@@ -60,9 +60,9 @@ export const formConfig = {
             name:'push',value:'Push Notifications'
         },],
         validation: z.object({
-            email: z.boolean(),
-            sms: z.boolean(),
-            push: z.boolean(),
+            email: z.boolean().optional(),
+            sms: z.boolean().optional(),
+            push: z.boolean().optional(),
           })
       },
       {
